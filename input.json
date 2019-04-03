@@ -1,0 +1,12 @@
+{
+  "url": "https://ol.dnse.com.vn/Account/Login?ReturnUrl=%2f",
+  "request_header": {
+    "method": "",
+    "host": "ol.dnse.com.vn",
+    "cookie": "",
+    "parameter": [{"target_host": ""}]
+  },
+  "framework": "",
+  "new_target": 0,
+  "login": 0
+}
