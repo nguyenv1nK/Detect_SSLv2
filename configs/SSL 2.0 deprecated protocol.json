@@ -1,0 +1,38 @@
+{
+  "directory": "",
+  "reports_folder": "reports",
+  "name": "SSL 2.0 deprecated protocol",
+  "name_vi": "Giao thức mã hóa cũ không an toàn SSL 2.0",
+  "vuln": {
+    "name": "SSL 2.0 deprecated protocol",
+    "synopsis": "The SSL server encrypts traffic using an old deprecated protocol (SSL 2.0) with known weaknesses",
+    "description":"	The remote service accepts connections encrypted using SSLv2 and/or SSLv3, which reportedly suffers from several cryptographic flaws and has been deprecated for several years. An attacker may be able to exploit these issues to conduct man-in-the-middle attacks or decrypt communications between the affected service and clients.",
+	"family": "Web Servers",
+    "impact": "	An attacker may be able to exploit these issues to conduct man-in-the-middle attacks or decrypt communications between the affected service and clients.",
+    "solution": "Disable SSL 2.0 and use TLS 1.2 (or higher) instead.",
+    "ref": [
+      "https://securitybox.vn",
+      "https://www.acunetix.com/vulnerabilities/web/ssl-2-0-deprecated-protocol/",
+      "https://www.owasp.org/index.php/Testing_for_Weak_SSL/TLS_Ciphers,_Insufficient_Transport_Layer_Protection_(OTG-CRYPST-001)",
+
+    ],
+    "cve": [
+      "CWE-16",
+    ],
+    "cvss": [
+      "10.0"
+    ],
+    "severity": 4,
+    "created_at": 1528077907,
+    "protocol": "tcp",
+    "alert": false,
+    "additional_info": "",
+    "tags": [
+      "CWE-16",
+      "verified",
+      "Weak ciphers",
+	  "SSL 2.0"
+    ],
+    "plugin_id": 7
+  },
+ 

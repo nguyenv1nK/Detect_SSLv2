@@ -1,0 +1,55 @@
+{
+  "global": {
+    "name": "SecurityBox Enterprise Agents Link For Website",
+    "groups_next": 2,
+    "time_delay": 60,
+    "max_scans": 2,
+    "node": "localhost"
+  },
+  "plugins": {
+    "groups": 6,
+    "plugin_dir": "",
+    "groups_name": {
+      "6": "xss",
+      "7": "sqlmap",
+      "8": "bruteforce_password",
+      "9": "sqli_exploit",
+      "10": "directory_traversal_exploit",
+      "11": "directory_traversal_detect"
+    },
+    "max_instance_basic": 1,
+    "max_instance_advanced": 2,
+    "time_delay": 60
+  },
+  "service": {
+    "host": "",
+    "port": 8442,
+    "https": 0,
+    "username": "",
+    "password": ""
+  },
+  "logger": {
+    "loglevel": "all",
+    "logs_folder": "logs",
+    "logs_file": "application"
+  },
+  "email_notify": {
+    "sender": {
+      "subject": "SBOX NOTIFY FROM BOX CMC SERVER",
+      "email": "",
+      "password": "",
+      "server": "",
+      "port": 587
+    },
+    "receivers": [
+      "@gmail.com"
+    ]
+  },
+  "broker": {
+    "host": "",
+    "port": 5679,
+    "user": "",
+    "pass": "",
+    "manager_port": 15679
+  }
+}
